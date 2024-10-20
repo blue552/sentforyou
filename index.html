@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hearts Rain</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <audio id="background-music" src="music.mp3" autoplay loop muted></audio>
+
+        <img src="463029466_1078682050280749_933652872342833585_n.jpg" alt="Cloud Image" class="cloud-image">
+        <div class="cloud">
+            <h2>Háp pi wo men day 20/10</h2>
+            <br>
+            <br>
+            <h3>Chắc có lẽ tớ là người chúc muộn nhất, nhưng không phải tớ quên đâu cố tình đó. Chúc cậu luôn xinh đẹp, vui vẻ, tình bền như keo, tiền nhiều như kẹo</h3>
+        </div>
+    </div>
+    <div id="falling-elements"></div>
+
+    <!-- Thêm thẻ audio để phát nhạc -->
+    <button class="play-music-button" onclick="playMusic()">Ấn nút này</button>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("background-music");
+            audio.muted = false; // Tắt thuộc tính muted
+            audio.play();
+        }
+    </script>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
